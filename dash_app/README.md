@@ -1,4 +1,4 @@
-This is a toy project for learning how to use a couple of python libraries. 
+This is team IP Man's submission to AWS Hackdays 2019 -- Healthtech. 
 
 ### What it does
 
@@ -6,36 +6,10 @@ This is a toy project for learning how to use a couple of python libraries.
 2) The server does some processing on the video stream
 3) The client receives the processed video stream and re-displays the results in a different frame
 
-In the demo site, the server is simply flipping the image horizontally. You could imagine it doing something more sophisticated (e.g. applying some filters), but obviously I was too lazy to implement anything cool.
+In the demo site, we are using a MobileNet backend for inference of keypoints, and calculating a score based on how powerful we think your punch is. 
 
 ### Demo
-[Live Demo](https://python-stream-video.herokuapp.com)
+[Live Demo](http://13.229.209.149/)
 
 ### Setup
-
-#### Optional
-
-- setup heroku (`brew install heroku`)
-- Use a python virtualenv
-
-#### Required
-- `git clone https://github.com/dxue2012/python-webcam-flask.git`
-- `pip install -r requirements.txt`
-
-### Run locally
-
-IF YOU HAVE HEROKU:
-- `heroku local`
-IF NOT:
-- `gunicorn -k eventlet -w 1 app:app --log-file=-`
-
-- in your browser, navigate to localhost:5000
-
-### Deploy to heroku
-
-- `git push heroku master`
-- heroku open
-
-### Common Issues
-
-If you run into a 'protocol not found' error, see if [this stackoverflow answer helps](https://stackoverflow.com/questions/40184788/protocol-not-found-socket-getprotobyname).
+Just start punching. A fast internet connection will help. 
